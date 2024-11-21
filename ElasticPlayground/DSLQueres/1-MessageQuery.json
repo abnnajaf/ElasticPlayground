@@ -1,0 +1,32 @@
+﻿//1. جستجوی دقیق با Match Query
+
+{
+  "query": {
+    "match": {
+      "message": "33mserver"
+    }
+  }
+}
+
+//2. جستجوی پیشرفته با Wildcard Query
+
+{
+  "query": {
+    "wildcard": {
+      "message": {
+        "value": "*server*"
+      }
+    }
+  }
+}
+
+
+//3. جستجوی کلمه درون یک Log خاص
+
+{
+  "query": {
+    "regexp": {
+      "message.keyword": ".*server.*"
+    }
+  }
+}

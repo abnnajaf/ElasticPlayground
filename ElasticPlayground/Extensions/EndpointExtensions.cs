@@ -9,5 +9,6 @@ public static class EndpointExtensions
         LogMessageExample.MapEndpoints(app);
         LogScopeExample.MapEndpoints(app);
         LogExceptionExample.MapEndpoints(app);
+        LogLevelExample.MapEndpoints(app);
     }
 }

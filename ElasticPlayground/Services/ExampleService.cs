@@ -13,4 +13,9 @@ public class ExampleService(ILogger<ExampleService> logger)
             throw new Exception("Inner exception Message", ex);
         }
     }
+
+    public void LogLevelExample()
+    {
+        logger.LogDebug("[ExampleService] step 3 : log debug");
+    }
 }
